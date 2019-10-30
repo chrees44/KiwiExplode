@@ -16,8 +16,6 @@ object GameFns {
   def draw(state: State): State = {
     state.deck match {
       case d :: r =>
-        println(s"You drew a card: $d, remaining deck: ${r.length}")
-
         val stateAfterDraw = state.copy(deck = r, lastPlayedCard = Some(d))
         d match {
           case Explode =>

@@ -25,6 +25,7 @@ object main extends App {
     userIn match {
       case "D" =>
         val stateAfterDraw = draw(state)
+        showState(stateAfterDraw)
 
         if (stateAfterDraw.gameIsOver) {
           if (stateAfterDraw.lastPlayedCard.contains(Explode))
