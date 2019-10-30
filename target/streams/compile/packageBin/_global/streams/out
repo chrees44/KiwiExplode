@@ -10,6 +10,8 @@
 [debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils 2.class
 [debug] 	IoUtils$.class
 [debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils$.class
+[debug] 	Player$.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/Player$.class
 [debug] 	IoUtils$ 2.class
 [debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils$ 2.class
 [debug] 	CardType$.class
@@ -28,6 +30,8 @@
 [debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils.class
 [debug] 	GameFns$.class
 [debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/GameFns$.class
+[debug] 	Player.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/Player.class
 [debug] 	main.class
 [debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main.class
 [debug] 	main$delayedInit$body.class

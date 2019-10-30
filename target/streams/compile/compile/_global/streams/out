@@ -1,5 +1,2 @@
-[warn] /Users/chris/Documents/dev/KiwiExplode/src/main/scala/main.scala:20:15: match may not be exhaustive.
-[warn] It would fail on the following input: Nil
-[warn]         state.deck match {
-[warn]               ^
+[warn] there was one deprecation warning (since 2.13.0); re-run with -deprecation for details
 [warn] one warning found

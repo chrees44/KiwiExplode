@@ -1,1 +1,34 @@
-[debug] No changes
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(/Users/chris/Documents/dev/KiwiExplode/src/main/scala/GameFns.scala)
+[debug] Invalidated products: Set(/Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/GameFns.class, /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/GameFns$.class)
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(GameFns)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set(/Users/chris/Documents/dev/KiwiExplode/src/main/scala/GameFns.scala)
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(GameFns)
+[debug] All initially invalidated sources:Set(/Users/chris/Documents/dev/KiwiExplode/src/main/scala/GameFns.scala)
+[debug] Initial set of included nodes: GameFns
+[info] Compiling 1 Scala source to /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.1:compile for Scala 2.13.1
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.1:compile for Scala 2.13.1
+[debug] [zinc] Running cached compiler 130ee66 for Scala compiler version 2.13.1
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/classes:/Users/chris/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.jar
+[debug] 	-classpath
+[debug] 	/Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes:/Users/chris/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.1/scala-reflect-2.13.1.jar:/Users/chris/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.0.8/scalactic_2.13-3.0.8.jar
+[debug] Scala compilation took 3.297735832 s
+[info] Done compiling.
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] No classes were invalidated.

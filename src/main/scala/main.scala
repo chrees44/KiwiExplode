@@ -3,18 +3,16 @@ import GameFns._
 import IoUtils._
 
 import scala.annotation.tailrec
-import scala.util.Random
 
 object main extends App {
 
-  var initState: State = State(
-    Random.shuffle(
-      createDeck(numBlanks = 16, numExplosives = 1)),
-    lastPlayedCard = None,
-    gameIsOver = false)
+  var initState: State = createInitialState(
+    numBlanks = 16,
+    numExplosives = 1,
+    numDefuses = 3,
+    numDefusesPerPlayer = 1)
 
   runLoop(initState)
-
 
   @tailrec
   def runLoop(state: State): Any = {
@@ -28,7 +26,7 @@ object main extends App {
         showState(stateAfterDraw)
 
         if (stateAfterDraw.gameIsOver) {
-          if (stateAfterDraw.lastPlayedCard.contains(Explode))
+          if (stateAfterDraw.currentPlayer.lastDrawnCard.contains(Explode))
             showLoser()
           showGameOver()
         }
