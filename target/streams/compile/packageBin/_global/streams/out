@@ -1,0 +1,37 @@
+[debug] Packaging /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/kiwiexplode_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes
+[debug] 	main$delayedInit$body 2.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main$delayedInit$body 2.class
+[debug] 	main$.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main$.class
+[debug] 	IoUtils 2.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils 2.class
+[debug] 	IoUtils$.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils$.class
+[debug] 	IoUtils$ 2.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils$ 2.class
+[debug] 	CardType$.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/CardType$.class
+[debug] 	CardType.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/CardType.class
+[debug] 	main 2.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main 2.class
+[debug] 	State$.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/State$.class
+[debug] 	State.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/State.class
+[debug] 	main$ 2.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main$ 2.class
+[debug] 	IoUtils.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/IoUtils.class
+[debug] 	GameFns$.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/GameFns$.class
+[debug] 	main.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main.class
+[debug] 	main$delayedInit$body.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/main$delayedInit$body.class
+[debug] 	GameFns.class
+[debug] 	  /Users/chris/Documents/dev/KiwiExplode/target/scala-2.13/classes/GameFns.class
+[debug] Done packaging.
