@@ -70,6 +70,16 @@ class MainLoopTest extends FlatSpec with BeforeAndAfter with MockitoSugar {
 
     verify(mockIoUtils, times(3)).getUserInput
   }
+
+  it should "handle unrecognised input" in {
+    val state = baseState.copy()
+
+    when(mockIoUtils.getUserInput).thenReturn("X", "Q")
+
+    mainLoop.runLoop(state)
+
+    verify(mockIoUtils, times(2)).getUserInput
+  }
 }
 
 
