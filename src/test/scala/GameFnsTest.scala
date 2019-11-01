@@ -39,10 +39,19 @@ class GameFnsTest extends FlatSpec {
     deck should contain only(Blank, Explode, Defuse)
   }
 
-  "createInitialState" should "throw if empty deck" in {
+  "createInitialState" should "create correct state" in {
+    val state = GameFns.createInitialState()
 
+    state.currentPlayer.hand shouldEqual List(Defuse)
+    state.currentPlayer.lastDrawnCard shouldEqual None
+
+    state.deck should have length 19
+    exactly(16, state.deck) should equal(Blank)
+    exactly(1, state.deck) should equal(Explode)
+    exactly(2, state.deck) should equal(Defuse)
+
+    state.gameIsOver shouldEqual false
   }
-
 
   "draw" should "handle deck is empty List" in {
     val result = GameFns.draw(baseState)
@@ -52,7 +61,7 @@ class GameFnsTest extends FlatSpec {
   }
 
   it should "handle next card is Blank" in {
-    val state = baseState.copy(deck = List(Blank, Blank), gameIsOver = false)
+    val state = baseState.copy(deck = List(Blank, Blank))
 
     val result = GameFns.draw(state)
 
@@ -62,7 +71,7 @@ class GameFnsTest extends FlatSpec {
   }
 
   it should "handle next card is Explode" in {
-    val state = baseState.copy(deck = List(Explode, Blank), gameIsOver = false)
+    val state = baseState.copy(deck = List(Explode, Blank))
 
     val result = GameFns.draw(state)
 
@@ -71,18 +80,27 @@ class GameFnsTest extends FlatSpec {
     result.gameIsOver should equal(true)
   }
 
-  it should "handle last card is Blank" in {
-    val state = baseState.copy(deck = List(Blank), gameIsOver = false)
+  it should "handle next card is Defuse" in {
+    val state = baseState.copy(deck = List(Defuse, Blank))
 
     val result = GameFns.draw(state)
 
-    result.deck should equal (List.empty)
-    result.currentPlayer.lastDrawnCard should equal(Some(Blank))
-    result.gameIsOver should equal(true)
+    result.deck should equal (List(Blank))
+    result.currentPlayer.lastDrawnCard should equal(Some(Defuse))
+    result.currentPlayer.hand should equal(List(Defuse))
+    result.gameIsOver should equal(false)
+  }
+
+  it should "handle next card is another Defuse" in {
+    val state = baseState.copy(deck = List(Defuse, Blank), currentPlayer = player.copy(hand = List(Defuse)))
+
+    val result = GameFns.draw(state)
+
+    result.currentPlayer.hand should equal(List(Defuse, Defuse))
   }
 
   it should "handle last card is Explode" in {
-    val state = baseState.copy(deck = List(Explode), gameIsOver = false)
+    val state = baseState.copy(deck = List(Explode))
 
     val result = GameFns.draw(state)
 

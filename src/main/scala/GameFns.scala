@@ -4,17 +4,19 @@ import scala.util.Random
 
 object GameFns {
 
-  def createInitialState(numBlanks: Int,
-                         numExplosives: Int,
-                         numDefuses: Int,
-                         numDefusesPerPlayer: Int): State = {
+  def createInitialState(): State = {
+    val numBlanks = 16
+    val numExplosives = 1
+    val numDefuses = 3
+    val numDefusesPerPlayer = 1
+
     val player = Player(
       hand = List.fill(numDefusesPerPlayer)(Defuse),
       lastDrawnCard = None
     )
 
     val deck = Random.shuffle(
-      createDeck(numBlanks, numExplosives, numDefuses - 1))
+      createDeck(numBlanks, numExplosives, numDefuses - numDefusesPerPlayer))
 
     State(
       deck = deck,
@@ -30,10 +32,6 @@ object GameFns {
     val defuses = List.fill(numDefuses)(Defuse)
     blanks ++ explosives ++ defuses
   }
-
-  //  def deal(state: State): State = {
-  //    state.copy()
-  //  }
 
   def draw(state: State): State = {
     state.deck match {
@@ -51,10 +49,7 @@ object GameFns {
               currentPlayer = stateAfterDraw.currentPlayer.copy(
                 hand = stateAfterDraw.currentPlayer.hand :+ Defuse
               ))
-          case Blank | _ =>
-            if (r == List.empty)
-              stateAfterDraw.copy(gameIsOver = true)
-            else stateAfterDraw
+          case Blank => stateAfterDraw
         }
       case List() =>
         state.copy(deck = List.empty, gameIsOver = true)
