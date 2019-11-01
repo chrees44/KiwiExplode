@@ -3,7 +3,6 @@ import GameFns.draw
 
 import scala.annotation.tailrec
 
-/** Runs the main game loop */
 class MainLoop(ioUtils: IoUtils) {
   import ioUtils._
 
@@ -11,7 +10,7 @@ class MainLoop(ioUtils: IoUtils) {
   final def runLoop(state: State): Any = {
 
     showPrompt()
-    val userIn = ioUtils.getUserInput
+    val userIn = getUserInput
 
     userIn match {
       case "D" =>
